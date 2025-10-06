@@ -62,11 +62,11 @@ public class RealEstate implements PropertyInterface {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("RealEstate [city=").append(city)
-                .append(", genre=").append(genre)
-                .append(", pricePerSqm=").append(String.format("%.2f", price))
-                .append(", sqm=").append(sqm)
-                .append(", rooms=").append(numberOfRooms)
+        sb.append("RealEstate [city = ").append(city)
+                .append(", genre = ").append(genre)
+                .append(", pricePerSqm = ").append(String.format("%.2f", price))
+                .append(", sqm = ").append(sqm)
+                .append(", rooms = ").append(numberOfRooms)
                 .append("]\nTotal price (with city modifier): ").append(getTotalPrice())
                 .append("\nAverage sqm per room: ").append(String.format("%.2f", averageSqmPerRoom()));
         return sb.toString();
